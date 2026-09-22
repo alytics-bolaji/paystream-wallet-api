@@ -1,0 +1,14 @@
+[Unit]
+Description=Paystream Kenya wallet API (staging)
+After=network.target
+
+[Service]
+Type=simple
+User=walletsvc
+WorkingDirectory=/opt/paystream
+ExecStart=/usr/bin/node /opt/paystream/wallet-api.js
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
