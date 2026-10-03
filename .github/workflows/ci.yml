@@ -9,6 +9,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Debug Paths and Files
+        run: |
+          echo "=== CURRENT WORKING DIRECTORY ==="
+          pwd
+          echo ""
+          echo "=== LISTING ALL FILES IN REPOSITORY ==="
+          ls -R
       - name: Run tests
         run: bash /home/mobolaji/paystream/paystream-wallet-api/tests.sh
 
