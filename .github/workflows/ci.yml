@@ -10,5 +10,5 @@ jobs:
         with:
           node-version: 20
       - name: Run tests
-        run: bash tests.sh
+        run: bash /home/mobolaji/paystream/paystream-wallet-api
 
