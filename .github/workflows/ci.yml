@@ -17,5 +17,5 @@ jobs:
           echo "=== LISTING ALL FILES IN REPOSITORY ==="
           ls -R
       - name: Run tests
-        run: bash /home/mobolaji/paystream/paystream-wallet-api/tests.sh
+        run: bash /home/runner/work/paystream-wallet-api/paystream-wallet-api/tests.sh
 
